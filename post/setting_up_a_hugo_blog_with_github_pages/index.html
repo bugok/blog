@@ -20,7 +20,7 @@ I Googled a bit and found this guide. That was a good starting point, as it allo
 Starting point This started with a Facebook group post which asked what is a good platform to host a blog. There were a few answers, but the hugo and github pages caught my eye, so I thought I&rsquo;ll give it a go.
 I Googled a bit and found this guide. That was a good starting point, as it allowed me to get something to work - but I wasn&rsquo;t fully happy with the end result."><meta itemprop=datePublished content="2022-02-25T21:43:08+02:00">
 <meta itemprop=dateModified content="2022-02-25T21:43:08+02:00">
-<meta itemprop=wordCount content="433">
+<meta itemprop=wordCount content="526">
 <meta itemprop=keywords content>
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Setting up a blog using Hugo and Github pages">
@@ -84,12 +84,17 @@ $ git submodule add https://github.com/vimux/binario themes/binario
 <pre tabindex=0><code>hugo server -D
 </code></pre><p>The <code>-D</code> part is to track draft content (this is the default when new content is generated).</p>
 <p>And there is was:</p>
-<p><img src=/about.png alt=About></p>
+<p><img src=/about_local.png alt=About></p>
+<p>The first dummy post was successfully loaded!</p>
 <h2 id=pushing-to-github>Pushing to github</h2>
+<p>Running the following pushed the code to github:</p>
 <pre tabindex=0><code>$ git add .
 $ git push origin master
-
-</code></pre></div>
+</code></pre><p>However, this isn&rsquo;t good enough, as this isn&rsquo;t the format that github pages is expecting. Here&rsquo;s where Github Actions come into play. <a href=https://gohugo.io/hosting-and-deployment/hosting-on-github/>This link</a> shares a drop-in configuration for the <code>.github/workflows/gh-pages.yml</code> file you can add to your repo and will configure the needed actions to publish to github pages.</p>
+<p>As mentioned in the link, I had to change the source branch to <code>gh-pages</code>. See here:</p>
+<p><img src=/github_branch.png alt="Github Branch"></p>
+<p>Lastly, I needed to change the default branch to <code>main</code> instead of master.</p>
+</div>
 <footer class=entry__footer>
 <div class="entry__share share">
 <a class="share__link btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fbugok.github.io%2fblog%2fpost%2fsetting_up_a_hugo_blog_with_github_pages%2f" target=_blank rel="noopener noreferrer" onclick="return window.open(this.href,'Share on Facebook','width=800,height=600,toolbar=0,status=0'),!1"><svg class="share__icon" aria-label="Facebook" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M330 512V322h64l9-74h-73v-47c0-22 6-36 37-36h39V99c-7-1-30-3-57-3-57 0-95 34-95 98v54h-64v74h64v190z"/></svg>
