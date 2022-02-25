@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>Setting up a blog using Hugo and Github pages | Noam Lerner&#39;s Blog</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Setting up a blog using Hugo and Github pages" />
+<meta property="og:description" content="In this first post, in an inception-like manner, I&rsquo;ll share how I got this blog to work.
+Starting point This started with a Facebook group post which asked what is a good platform to host a blog. There were a few answers, but the hugo and github pages caught my eye, so I thought I&rsquo;ll give it a go.
+I Googled a bit and found this guide. That was a good starting point, as it allowed me to get something to work - but I wasn&rsquo;t fully happy with the end result." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bugok.github.io/blog/post/setting_up_a_hugo_blog_with_github_pages/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-02-25T21:43:08+02:00" />
+<meta property="article:modified_time" content="2022-02-25T21:43:08+02:00" />
+
+
+		<meta itemprop="name" content="Setting up a blog using Hugo and Github pages">
+<meta itemprop="description" content="In this first post, in an inception-like manner, I&rsquo;ll share how I got this blog to work.
+Starting point This started with a Facebook group post which asked what is a good platform to host a blog. There were a few answers, but the hugo and github pages caught my eye, so I thought I&rsquo;ll give it a go.
+I Googled a bit and found this guide. That was a good starting point, as it allowed me to get something to work - but I wasn&rsquo;t fully happy with the end result."><meta itemprop="datePublished" content="2022-02-25T21:43:08+02:00" />
+<meta itemprop="dateModified" content="2022-02-25T21:43:08+02:00" />
+<meta itemprop="wordCount" content="526">
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setting up a blog using Hugo and Github pages"/>
+<meta name="twitter:description" content="In this first post, in an inception-like manner, I&rsquo;ll share how I got this blog to work.
+Starting point This started with a Facebook group post which asked what is a good platform to host a blog. There were a few answers, but the hugo and github pages caught my eye, so I thought I&rsquo;ll give it a go.
+I Googled a bit and found this guide. That was a good starting point, as it allowed me to get something to work - but I wasn&rsquo;t fully happy with the end result."/>
+
+	<link rel="stylesheet" href="/blog/css/bundle.css">
+	<link rel="stylesheet" href="/blog/css/custom.css">
+	<link rel="icon" href="/blog/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/blog/icons/32.png" sizes="32x32" type="image/png">
+	<link rel="manifest" href="/blog/manifest.json">
+		
+</head>
+<body class="body kind-page">
+	<header class="header">
+	<a class="logo" href="/blog/">Noam Lerner&#39;s Blog</a>
+	
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		
+<nav class="breadcrumb block" aria-label="breadcrumb">
+	<ol class="breadcrumb__list">
+		
+		<li class="breadcrumb__item">
+			<a class="breadcrumbs__link" href="/blog/">Binario</a>
+		</li>
+		<li class="breadcrumb__item">
+			<a class="breadcrumbs__link" href="/blog/post/">Posts</a>
+		</li>
+		<li class="breadcrumbs__item breadcrumb__item--active" aria-current="page">Setting up a blog using Hugo and Github pages</li>
+	</ol>
+</nav>
+		<div class="single block">
+			<article class="entry">
+	<div class="entry__meta meta mb">
+	<time class="entry__meta-published meta-published" datetime="2022-02-25T21:43:08&#43;02:00">February 25, 2022</time>
+	</div>
+				<h1 class="entry__title">Setting up a blog using Hugo and Github pages</h1>
+				<div class="entry__content"><p>In this first post, in an inception-like manner, I&rsquo;ll share how I got this blog to work.</p>
+<h2 id="starting-point">Starting point</h2>
+<p>This started with a Facebook group post which asked what is a good platform to host a blog. There were a few answers, but the hugo and github pages caught my eye, so I thought I&rsquo;ll give it a go.</p>
+<p>I Googled a bit and found <a href="https://levelup.gitconnected.com/build-a-personal-website-with-github-pages-and-hugo-6c68592204c7">this guide</a>. That was a good starting point, as it allowed me to get something to work - but I wasn&rsquo;t fully happy with the end result.</p>
+<h2 id="improving-the-publishing-flow">Improving the publishing flow</h2>
+<p><a href="https://gohugo.io/">Hugo</a> is a framework for building websites. You install a CLI (<code>hugo</code>), you create a site template, pick a theme, add some content, run a build command which generates files - and there you have your static content you can publish. The guide was simplifying the publishing part by suggesting to manually add the generated files to source control, using the structure needed by github pages.</p>
+<p>I wanted to have <strong>everything</strong> in source control - not only the generated files. For that, I needed to find a good way to do the publishing part. Meaning, how to publish the blog when a new commit is pushed.</p>
+<p>The answer for that - Github Action.</p>
+<h2 id="retracing-my-steps---running-locally">Retracing my steps - running locally</h2>
+<p>Install hugo:</p>
+<pre tabindex="0"><code class="language-lang=bash" data-lang="lang=bash">brew install hugo
+</code></pre><p>Create the hugo template</p>
+<pre tabindex="0"><code>$ cd ~/sources/
+$ hugo new site blog 
+</code></pre><p>Here is where I eventually decided to diverge form that guide. I needed to pick a theme for my site. <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a> is a good place for this. After I picked <a href="https://binario.netlify.app/">Binario</a>, I then made the mistake of cloning the repository inside of <code>~/sources/blog/themes</code>. What I should have done (and eventually did) was to add it as a git submodule:</p>
+<pre tabindex="0"><code>$ cd ~/source/blog
+$ git init  # Initialize the repo
+$ git remote add origin git@github.com:bugok/blog.git
+$ git submodule add https://github.com/vimux/binario themes/binario
+</code></pre><p>At this point, the local directory is ready to handle new content:</p>
+<pre tabindex="0"><code>hugo new about.md
+</code></pre><p>It took me some time to realize that the template I was using expects the content to be under <code>blog/content/post</code> and not under <code>blog/content/</code> which is where the <code>hugo new about.md</code> command created the file.</p>
+<p>I then opened the file in an editor, made some changes, and ran the build command:</p>
+<pre tabindex="0"><code>hugo
+</code></pre><p>Finally, for local debugging, you can start a local hugo server which can serve your website locally:</p>
+<pre tabindex="0"><code>hugo server -D
+</code></pre><p>The <code>-D</code> part is to track draft content (this is the default when new content is generated).</p>
+<p>And there is was:</p>
+<p><img src="/about_local.png" alt="About"></p>
+<p>The first dummy post was successfully loaded!</p>
+<h2 id="pushing-to-github">Pushing to github</h2>
+<p>Running the following pushed the code to github:</p>
+<pre tabindex="0"><code>$ git add .
+$ git push origin master
+</code></pre><p>However, this isn&rsquo;t good enough, as this isn&rsquo;t the format that github pages is expecting. Here&rsquo;s where Github Actions come into play. <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">This link</a> shares a drop-in configuration for the <code>.github/workflows/gh-pages.yml</code> file you can add to your repo and will configure the needed actions to publish to github pages.</p>
+<p>As mentioned in the link, I had to change the source branch to <code>gh-pages</code>. See here:</p>
+<p><img src="/github_branch.png" alt="Github Branch"></p>
+<p>Lastly, I needed to change the default branch to <code>main</code> instead of master.</p>
+</div>
+				
+				<footer class="entry__footer">
+					
+					
+<div class="entry__share share">
+	<a class="share__link btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fbugok.github.io%2fblog%2fpost%2fsetting_up_a_hugo_blog_with_github_pages%2f" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Facebook', 'width=800,height=600,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Facebook" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M330 512V322h64l9-74h-73v-47c0-22 6-36 37-36h39V99c-7-1-30-3-57-3-57 0-95 34-95 98v54h-64v74h64v190z"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fbugok.github.io%2fblog%2fpost%2fsetting_up_a_hugo_blog_with_github_pages%2f&title=Setting%20up%20a%20blog%20using%20Hugo%20and%20Github%20pages" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on LinkedIn', 'width=640,height=480,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			</article>
+		</div>
+	</main>
+	
+<div class="authorbox block">
+	<div class="author">
+		<figure class="author__avatar">
+			<img class="author__img" alt="Noam Lerner avatar" src="/blog/img/avatar.png" height="90" width="90">
+		</figure>
+		<div class="author__body">
+			<div class="author__name">
+				Noam Lerner
+			</div>
+			<div class="author__bio">Some bio</div>
+		</div>
+	</div>
+</div>
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/bugok">
+			<svg class="social__icon" aria-label="Facebook" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M330 512V322h64l9-74h-73v-47c0-22 6-36 37-36h39V99c-7-1-30-3-57-3-57 0-95 34-95 98v54h-64v74h64v190z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/noamler">
+			<svg class="social__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/bugok">
+			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2022 Binario. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+
+<script src="/blog/js/custom.js"></script>
+</body>
+</html>
