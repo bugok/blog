@@ -20,7 +20,7 @@ I Googled a bit and found this guide. That was a good starting point, as it allo
 Starting point This started with a Facebook group post which asked what is a good platform to host a blog. There were a few answers, but the hugo and github pages caught my eye, so I thought I&rsquo;ll give it a go.
 I Googled a bit and found this guide. That was a good starting point, as it allowed me to get something to work - but I wasn&rsquo;t fully happy with the end result."><meta itemprop=datePublished content="2022-02-25T21:43:08+02:00">
 <meta itemprop=dateModified content="2022-02-25T21:43:08+02:00">
-<meta itemprop=wordCount content="678">
+<meta itemprop=wordCount content="680">
 <meta itemprop=keywords content>
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Setting up a blog using Hugo and Github pages">
@@ -101,7 +101,7 @@ $ git push origin master
 <p>Googling this, I found many references on how the simplest way to make it work is to save images under the <code>static</code> folder of the hugo directory. Upon build, all files under <code>static</code> show up at the root of the website. It should have worked, but it didn&rsquo;t.</p>
 <p>Eventually what helped was to open up Chrome Developer Tools and see the following:</p>
 <p><img src=/blog/static_path.png alt></p>
-<p>Turns out that this didn&rsquo;t work since I&rsquo;m not using the website&rsquo;s root, but to the <code>/blogz path. Changing </code><img src=/about_local.png alt=About><code>to</code><img src=/blog/about_local.png alt=About>` fixed the issue.</p>
+<p>Turns out that this didn&rsquo;t work since I&rsquo;m not using the website&rsquo;s root, but to the <code>/blog</code> path. Changing <code>![About](/about_local.png)</code> to <code>![About](/blog/about_local.png)</code> fixed the issue.</p>
 <h2 id=references>References</h2>
 <ul>
 <li><a href=https://gohugo.io/getting-started/quick-start/>Hugo&rsquo;s quick start guide</a></li>
@@ -122,13 +122,12 @@ $ git push origin master
 <div class="authorbox block">
 <div class=author>
 <figure class=author__avatar>
-<img class=author__img alt="Noam Lerner avatar" src=/blog/img/avatar.png height=90 width=90>
+<img class=author__img alt="Noam Lerner avatar" src=/blog/avatar.png height=90 width=90>
 </figure>
 <div class=author__body>
 <div class=author__name>
 Noam Lerner
 </div>
-<div class=author__bio>Some bio</div>
 </div>
 </div>
 </div>
