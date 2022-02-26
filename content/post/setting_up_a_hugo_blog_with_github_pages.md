@@ -100,7 +100,7 @@ Eventually what helped was to open up Chrome Developer Tools and see the followi
 
 ![](/blog/static_path.png)
 
-Turns out that this didn't work since I'm not using the website's root, but to the `/blogz path. Changing `![About](/about_local.png)` to `![About](/blog/about_local.png)` fixed the issue.
+Turns out that this didn't work since I'm not using the website's root, but to the `/blog` path. Changing `![About](/about_local.png)` to `![About](/blog/about_local.png)` fixed the issue.
 
 ## References
 

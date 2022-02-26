@@ -8,8 +8,8 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Author] # Used in authorbox
   name = "Noam Lerner"
-  bio = "Some bio"
-  avatar = "img/avatar.png"
+  bio = ""
+  avatar = "/avatar.png"
 
 [Params]
   description = "Responsive card-based & code-light Hugo theme" # Site Description. Used in meta description
