@@ -23,7 +23,7 @@ I Googled a bit and found this guide. That was a good starting point, as it allo
 Starting point This started with a Facebook group post which asked what is a good platform to host a blog. There were a few answers, but the hugo and github pages caught my eye, so I thought I&rsquo;ll give it a go.
 I Googled a bit and found this guide. That was a good starting point, as it allowed me to get something to work - but I wasn&rsquo;t fully happy with the end result."><meta itemprop="datePublished" content="2022-02-25T21:43:08+02:00" />
 <meta itemprop="dateModified" content="2022-02-25T21:43:08+02:00" />
-<meta itemprop="wordCount" content="678">
+<meta itemprop="wordCount" content="680">
 <meta itemprop="keywords" content="" />
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Setting up a blog using Hugo and Github pages"/>
@@ -51,7 +51,7 @@ I Googled a bit and found this guide. That was a good starting point, as it allo
 	<ol class="breadcrumb__list">
 		
 		<li class="breadcrumb__item">
-			<a class="breadcrumbs__link" href="/blog/">Binario</a>
+			<a class="breadcrumbs__link" href="/blog/">Home</a>
 		</li>
 		<li class="breadcrumb__item">
 			<a class="breadcrumbs__link" href="/blog/post/">Posts</a>
@@ -110,7 +110,7 @@ $ git push origin master
 <p>Googling this, I found many references on how the simplest way to make it work is to save images under the <code>static</code> folder of the hugo directory. Upon build, all files under <code>static</code> show up at the root of the website. It should have worked, but it didn&rsquo;t.</p>
 <p>Eventually what helped was to open up Chrome Developer Tools and see the following:</p>
 <p><img src="/blog/static_path.png" alt=""></p>
-<p>Turns out that this didn&rsquo;t work since I&rsquo;m not using the website&rsquo;s root, but to the <code>/blogz path. Changing </code><img src="/about_local.png" alt="About"><code>to</code><img src="/blog/about_local.png" alt="About">` fixed the issue.</p>
+<p>Turns out that this didn&rsquo;t work since I&rsquo;m not using the website&rsquo;s root, but to the <code>/blog</code> path. Changing <code>![About](/about_local.png)</code> to <code>![About](/blog/about_local.png)</code> fixed the issue.</p>
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://gohugo.io/getting-started/quick-start/">Hugo&rsquo;s quick start guide</a></li>
@@ -166,7 +166,7 @@ $ git push origin master
 			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
 		</a>
 </div>
-	<div class="footer__copyright">© 2022 Binario. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+	<div class="footer__copyright">© 2022 Noam Lerner&#39;s Blog. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
 

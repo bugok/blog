@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://bugok.github.io/blog/about/</loc>
+    <lastmod>2022-02-26T15:11:05+02:00</lastmod>
+  </url><url>
     <loc>https://bugok.github.io/blog/</loc>
     <lastmod>2022-02-25T21:43:08+02:00</lastmod>
   </url><url>
@@ -10,9 +13,6 @@
   </url><url>
     <loc>https://bugok.github.io/blog/post/setting_up_a_hugo_blog_with_github_pages/</loc>
     <lastmod>2022-02-25T21:43:08+02:00</lastmod>
-  </url><url>
-    <loc>https://bugok.github.io/blog/post/about/</loc>
-    <lastmod>2022-02-25T14:33:28+02:00</lastmod>
   </url><url>
     <loc>https://bugok.github.io/blog/categories/</loc>
   </url><url>
