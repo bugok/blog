@@ -12,7 +12,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   avatar = "/avatar.png"
 
 [Params]
-  description = "Responsive card-based & code-light Hugo theme" # Site Description. Used in meta description
+  description = "A bunch of Noam Lerner's ramblings" # Site Description. Used in meta description
   opengraph = true # Enable OpenGraph if true
   schema = true # Enable Schema
   twitter_cards = true # Enable Twitter Cards if true
@@ -35,7 +35,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 [Params.Entry]
   meta = ["date", "categories"] # Enable meta fields in given order
   toc = false # Enable Table of Contents
-  tocOpen = true # Open Table of Contents block. Optional
+  tocOpen = false # Open Table of Contents block. Optional
 
 [Params.Featured]
   previewOnly = false # Show only preview featured image
@@ -92,3 +92,4 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [outputs]
   home = ["HTML", "RSS", "MANIFEST"]
+

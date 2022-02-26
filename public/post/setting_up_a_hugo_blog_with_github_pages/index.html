@@ -24,7 +24,7 @@ Starting point This started with a Facebook group post which asked what is a goo
 I Googled a bit and found this guide. That was a good starting point, as it allowed me to get something to work - but I wasn&rsquo;t fully happy with the end result."><meta itemprop="datePublished" content="2022-02-25T21:43:08+02:00" />
 <meta itemprop="dateModified" content="2022-02-25T21:43:08+02:00" />
 <meta itemprop="wordCount" content="680">
-<meta itemprop="keywords" content="" />
+<meta itemprop="keywords" content="hugo," />
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Setting up a blog using Hugo and Github pages"/>
 <meta name="twitter:description" content="In this first post, in an inception-like manner, I&rsquo;ll share how I got this blog to work.
@@ -42,6 +42,25 @@ I Googled a bit and found this guide. That was a good starting point, as it allo
 	<header class="header">
 	<a class="logo" href="/blog/">Noam Lerner&#39;s Blog</a>
 	
+<nav class="main-nav main-nav--right" role="navigation">
+	<button id="toggle" class="main-nav__btn" aria-label="Menu toggle" aria-expanded="false" tabindex="0">
+		<div class="main-nav__btn-box" tabindex="-1">
+			<svg class="main-nav__icon icon-menu" width="18" height="18" viewBox="0 0 18 18">
+				<path class="icon-menu__burger" d="M18 0v3.6H0V0h18zM0 10.8h18V7.2H0v3.6zM0 18h18v-3.6H0V18z"/>
+				<path class="icon-menu__x" d="M11.55 9L18 15.45 15.45 18 9 11.55 2.55 18 0 15.45 6.45 9 0 2.55 2.55 0 9 6.45 15.45 0 18 2.55 11.55 9z"/>
+			</svg>
+		</div>
+	</button>
+	<ul id="menu" class="main-nav__list">
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/blog/about/">
+					
+					<span class="main-nav__text">About</span>
+					
+				</a>
+			</li>
+	</ul>
+</nav>
 </header>
 	<div class="primary">
 	
@@ -120,6 +139,9 @@ $ git push origin master
 				
 				<footer class="entry__footer">
 					
+<div class="entry__tags">
+			<a class="entry__tag btn" href="/blog/tags/hugo/">hugo</a>
+</div>
 					
 <div class="entry__share share">
 	<a class="share__link btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fbugok.github.io%2fblog%2fpost%2fsetting_up_a_hugo_blog_with_github_pages%2f" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Facebook', 'width=800,height=600,toolbar=0,status=0'); return false">
@@ -168,6 +190,7 @@ $ git push origin master
 </div>
 	<div class="footer__copyright">© 2022 Noam Lerner&#39;s Blog. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
+<script src="/blog/js/menu.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
 
 <script src="/blog/js/custom.js"></script>

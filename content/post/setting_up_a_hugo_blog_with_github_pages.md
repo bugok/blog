@@ -1,6 +1,10 @@
 ---
 title: "Setting up a blog using Hugo and Github pages"
 date: 2022-02-25T21:43:08+02:00
+tags: 
+- "hugo"
+categories: 
+- "hugo"
 ---
 
 In this first post, in an inception-like manner, I'll share how I got this blog to work. 
