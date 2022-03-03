@@ -43,7 +43,7 @@ $ hugo new site blog
 Here is where I eventually decided to diverge form that guide. I needed to pick a theme for my site. https://themes.gohugo.io/ is a good place for this. After I picked [Binario](https://binario.netlify.app/), I then made the mistake of cloning the repository inside of `~/sources/blog/themes`. What I should have done (and eventually did) was to add it as a git submodule: 
 
 ```
-$ cd ~/source/blog
+$ cd ~/sources/blog
 $ git init  # Initialize the repo
 $ git remote add origin git@github.com:bugok/blog.git
 $ git submodule add https://github.com/vimux/binario themes/binario
