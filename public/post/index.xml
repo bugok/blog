@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Noam Lerner&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Feb 2022 21:43:08 +0200</lastBuildDate><atom:link href="https://bugok.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Mar 2022 20:41:18 +0200</lastBuildDate><atom:link href="https://bugok.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I&#39;m the tech lead, I can create panic</title>
+      <link>https://bugok.github.io/blog/post/im_the_tech_lead_i_can_create_panic/</link>
+      <pubDate>Thu, 03 Mar 2022 20:41:18 +0200</pubDate>
+      
+      <guid>https://bugok.github.io/blog/post/im_the_tech_lead_i_can_create_panic/</guid>
+      <description>This post is the first real post I had in mind when thinking to start the blog. Is started with a random conversation with a friend who&amp;rsquo;s a tech lead at a big company. We met by chance one morning, and we discussed how different the working environment has become since the pandemic started, and how &amp;lsquo;work&amp;rsquo; has changed in many aspect when everyone, or some, are working remotely.
+Building connections and trust when working remotely Building connections and trust between team members has become harder since the pandemic started.</description>
+    </item>
+    
     <item>
       <title>Setting up a blog using Hugo and Github pages</title>
       <link>https://bugok.github.io/blog/post/setting_up_a_hugo_blog_with_github_pages/</link>

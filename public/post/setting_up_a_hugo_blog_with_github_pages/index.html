@@ -37,6 +37,17 @@ I Googled a bit and found this guide. That was a good starting point, as it allo
 	<link rel="icon" href="/blog/icons/32.png" sizes="32x32" type="image/png">
 	<link rel="manifest" href="/blog/manifest.json">
 		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-103582753-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 </head>
 <body class="body kind-page">
 	<header class="header">
@@ -82,6 +93,11 @@ I Googled a bit and found this guide. That was a good starting point, as it allo
 			<article class="entry">
 	<div class="entry__meta meta mb">
 	<time class="entry__meta-published meta-published" datetime="2022-02-25T21:43:08&#43;02:00">February 25, 2022</time>
+<span class="entry__meta-categories meta-categories">
+	<span class="meta-categories__list">Categories:
+		<a class="meta-categories__link" href="/blog/categories/hugo/" rel="category">hugo</a>
+	</span>
+</span>
 	</div>
 				<h1 class="entry__title">Setting up a blog using Hugo and Github pages</h1>
 				<div class="entry__content"><p>In this first post, in an inception-like manner, I&rsquo;ll share how I got this blog to work.</p>
@@ -100,7 +116,7 @@ I Googled a bit and found this guide. That was a good starting point, as it allo
 <pre tabindex="0"><code>$ cd ~/sources/
 $ hugo new site blog 
 </code></pre><p>Here is where I eventually decided to diverge form that guide. I needed to pick a theme for my site. <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a> is a good place for this. After I picked <a href="https://binario.netlify.app/">Binario</a>, I then made the mistake of cloning the repository inside of <code>~/sources/blog/themes</code>. What I should have done (and eventually did) was to add it as a git submodule:</p>
-<pre tabindex="0"><code>$ cd ~/source/blog
+<pre tabindex="0"><code>$ cd ~/sources/blog
 $ git init  # Initialize the repo
 $ git remote add origin git@github.com:bugok/blog.git
 $ git submodule add https://github.com/vimux/binario themes/binario
