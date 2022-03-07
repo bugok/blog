@@ -3,11 +3,11 @@ title: "I'm the tech lead, I can create panic"
 date: 2022-03-03T20:41:18+02:00
 ---
 
-This post is the first real post I had in mind when thinking to start the blog. Is started with a random conversation with a friend who's a tech lead at a big company. We met by chance one morning, and we discussed how different the working environment has become since the pandemic started, and how 'work' has changed in many aspect when everyone, or some, are working remotely. 
+This post is the first real post I had in mind when thinking to start the blog. Is started with a random conversation with a friend who's a tech lead at a big company. We met by chance one morning, and we discussed how different the working environment has become since the pandemic started, and how 'work' has changed in many aspects when everyone, or some, are working remotely. 
 
 ### Building connections and trust when working remotely
 
-Building connections and trust between team members has become harder since the pandemic started. Before, it was common to get on a plane, visit the other part of your team (or a partner-team) and nail down a piece of a project. Even more importantly, it was possible to have a chat about personal stuff, have a coffee, a beer or some other beverage - and build a human connection with other people. For me, this has changed to the worse, no matter how many 'virtual coffee' session I joined. 
+Building connections and trust between team members has become harder since the pandemic started. Before, it was common to get on a plane, visit the other part of your team (or a partner-team) and nail down a piece of a project. Even more importantly, it was possible to have a chat about personal stuff, have a coffee, a beer or some other beverage - and build a human connection with other people. For me, this has changed to the worse, no matter how many 'virtual coffee' sessions I joined. 
 
 It's even more apparent when you look at people who joined before and after the pandemic started. People who 'know that person' on the other end have it much easier to convey ideas - because they have already built that trust. 
 
