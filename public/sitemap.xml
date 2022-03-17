@@ -2,46 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bugok.github.io/blog/tags/culture/</loc>
+    <loc>https://bugok.github.io/tags/culture/</loc>
     <lastmod>2022-03-15T13:44:57+02:00</lastmod>
   </url><url>
-    <loc>https://bugok.github.io/blog/</loc>
+    <loc>https://bugok.github.io/</loc>
     <lastmod>2022-03-15T13:44:57+02:00</lastmod>
   </url><url>
-    <loc>https://bugok.github.io/blog/tags/pandemic/</loc>
+    <loc>https://bugok.github.io/tags/pandemic/</loc>
     <lastmod>2022-03-15T13:44:57+02:00</lastmod>
   </url><url>
-    <loc>https://bugok.github.io/blog/post/</loc>
+    <loc>https://bugok.github.io/post/</loc>
     <lastmod>2022-03-15T13:44:57+02:00</lastmod>
   </url><url>
-    <loc>https://bugok.github.io/blog/tags/</loc>
+    <loc>https://bugok.github.io/tags/</loc>
     <lastmod>2022-03-15T13:44:57+02:00</lastmod>
   </url><url>
-    <loc>https://bugok.github.io/blog/post/the_bus_factor/</loc>
+    <loc>https://bugok.github.io/post/the_bus_factor/</loc>
     <lastmod>2022-03-15T13:44:57+02:00</lastmod>
   </url><url>
-    <loc>https://bugok.github.io/blog/tags/burnout/</loc>
+    <loc>https://bugok.github.io/tags/burnout/</loc>
     <lastmod>2022-03-08T20:44:24+02:00</lastmod>
   </url><url>
-    <loc>https://bugok.github.io/blog/post/handling_low_tide/</loc>
+    <loc>https://bugok.github.io/post/handling_low_tide/</loc>
     <lastmod>2022-03-08T20:44:24+02:00</lastmod>
   </url><url>
-    <loc>https://bugok.github.io/blog/post/im_the_tech_lead_i_can_create_panic/</loc>
+    <loc>https://bugok.github.io/post/im_the_tech_lead_i_can_create_panic/</loc>
     <lastmod>2022-03-03T20:41:18+02:00</lastmod>
   </url><url>
-    <loc>https://bugok.github.io/blog/about/</loc>
+    <loc>https://bugok.github.io/about/</loc>
     <lastmod>2022-02-26T15:11:05+02:00</lastmod>
   </url><url>
-    <loc>https://bugok.github.io/blog/categories/</loc>
+    <loc>https://bugok.github.io/tags/hugo/</loc>
     <lastmod>2022-02-25T21:43:08+02:00</lastmod>
   </url><url>
-    <loc>https://bugok.github.io/blog/tags/hugo/</loc>
+    <loc>https://bugok.github.io/post/setting_up_a_hugo_blog_with_github_pages/</loc>
     <lastmod>2022-02-25T21:43:08+02:00</lastmod>
   </url><url>
-    <loc>https://bugok.github.io/blog/categories/hugo/</loc>
-    <lastmod>2022-02-25T21:43:08+02:00</lastmod>
-  </url><url>
-    <loc>https://bugok.github.io/blog/post/setting_up_a_hugo_blog_with_github_pages/</loc>
-    <lastmod>2022-02-25T21:43:08+02:00</lastmod>
+    <loc>https://bugok.github.io/categories/</loc>
   </url>
 </urlset>

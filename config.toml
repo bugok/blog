@@ -1,4 +1,4 @@
-baseurl = "https://bugok.github.io/blog/"
+baseurl = "https://bugok.github.io/"
 title = "Noam Lerner's Blog"
 languageCode = "en-us"
 paginate = "10" # Number of elements per page in pagination
