@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Noam Lerner&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Mar 2022 13:44:57 +0200</lastBuildDate><atom:link href="https://bugok.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Mar 2022 08:14:09 +0200</lastBuildDate><atom:link href="https://bugok.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up a custom domain for github pages</title>
+      <link>https://bugok.github.io/post/setting_up_a_custom_domain/</link>
+      <pubDate>Thu, 17 Mar 2022 08:14:09 +0200</pubDate>
+      
+      <guid>https://bugok.github.io/post/setting_up_a_custom_domain/</guid>
+      <description>In the last few weeks, I had to take some sick time from work and attend to my kids who are at home while my wife wasn&amp;rsquo;t feeling well. After spending all day running after them, I needed to unwind at the evening. I played some Eleven Table Tennis and then went to play around with creating a custom domain for the blog, instead of having it being served from bugok.</description>
+    </item>
+    
     <item>
       <title>The bus factor, during the pandemic</title>
       <link>https://bugok.github.io/post/the_bus_factor/</link>
