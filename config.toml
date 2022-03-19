@@ -8,7 +8,7 @@ googleAnalytics = "UA-103582753-1" # Enable Google Analytics by entering your tr
 
 [Author] # Used in authorbox
   name = "Noam Lerner"
-  bio = ""
+  bio = "Hello"
   avatar = "/avatar.png"
 
 [Params]
@@ -23,7 +23,7 @@ googleAnalytics = "UA-103582753-1" # Enable Google Analytics by entering your tr
   customCSS = ["css/custom.css"] # Include custom CSS files
   customJS = ["js/custom.js"] # Include custom JS files
   mainMenuAlignment = "right" # Align main menu (desktop version) to the right side
-  authorbox = true # Show authorbox at bottom of single pages if true
+  authorbox = false # Show authorbox at bottom of single pages if true
   comments = true # Enable comments for all site pages
   related = true # Enable Related content for single pages
   relatedMax = 5 # Set the maximum number of elements that can be displayed in related block. Optional
