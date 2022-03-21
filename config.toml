@@ -33,7 +33,7 @@ googleAnalytics = "UA-103582753-1" # Enable Google Analytics by entering your tr
   hideNoPostsWarning = false # Don't show no posts empty state warning in main page, if true
 
 [Params.Entry]
-  meta = ["date", "categories"] # Enable meta fields in given order
+  meta = ["date", "tags"] # Enable meta fields in given order
   toc = false # Enable Table of Contents
   tocOpen = false # Open Table of Contents block. Optional
 
