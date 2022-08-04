@@ -5,6 +5,7 @@ paginate = "10" # Number of elements per page in pagination
 theme = "binario"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "G-4VW03XLR18" # Enable Google Analytics by entering your tracking id
+enableRobotsTXT = true
 
 [Author] # Used in authorbox
   name = "Noam Lerner"
