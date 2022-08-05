@@ -7,6 +7,10 @@ disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "G-4VW03XLR18" # Enable Google Analytics by entering your tracking id
 enableRobotsTXT = true
 
+# This helps Google Search console to index the sitemap.xml properly
+# (hrefs are showing up with the baseURL)
+canonifyURLs = true
+
 [Author] # Used in authorbox
   name = "Noam Lerner"
   bio = "Hello"
