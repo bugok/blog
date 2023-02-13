@@ -7,6 +7,8 @@ tags:
 - ssl
 - dns
 - cloudflare
+summary: A step-by-step tutorial for setting up a custom domain for a github pages site.
+
 ---
 
 In the last few days, I had to take some sick time from work and attend to my kids who are at home while my wife isn't feeling well. After spending all day running after them, I needed to unwind at the evening. I played some [Eleven Table Tennis](https://www.oculus.com/experiences/quest/1995434190525828/) and then went to play around with creating a custom domain for the blog, instead of having it being served from `bugok.github.io`. 

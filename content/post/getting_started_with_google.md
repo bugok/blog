@@ -5,6 +5,8 @@ tags:
 - hugo
 - cloudflare
 - google
+summary: How to find 'low-hanging fruit' to improve your website using a few of Google's tools.
+
 ---
 
 I recently had my second experience of publishing a website. This time, it was for my wife's clinic. Like this blog, I used [hugo](https://gohugo.io/). Unlike this blog, I used [cloudflare pages](https://pages.cloudflare.com/) for the hosting. In this blog post, I'll describe my initial steps improving the website with Google's tools. 

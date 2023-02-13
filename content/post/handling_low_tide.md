@@ -4,6 +4,7 @@ date: 2022-03-08T20:44:24+02:00
 tags: 
 - culture
 - burnout
+summary: How to make the best of times where there are no burning issues, no urgent tasks.
 
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "I'm the tech lead, I can create panic"
 date: 2022-03-03T20:41:18+02:00
+summary: About the potential impact and responsibility a tech lead has on the team.
 ---
 
 This post is the first real post I had in mind when thinking to start the blog. Is started with a random conversation with a friend who's a tech lead at a big company. We met by chance one morning, and we discussed how different the working environment has become since the pandemic started, and how 'work' has changed in many aspects when everyone, or some, are working remotely. 

@@ -1,6 +1,7 @@
 ---
 title: "Writing Google Slides presentations in markdown with md2googleslides"
 date: 2022-08-31T14:20:36+03:00
+summary: How to write presentations in markdown and convert those to google slides using md2googleslides.
 ---
 
 ## Presentations

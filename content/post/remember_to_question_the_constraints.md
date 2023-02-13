@@ -1,6 +1,7 @@
 ---
 title: "Remember to question the constraints"
 date: 2022-05-11T19:32:38+03:00
+summary: When tackling a large-scale problem, remember to crystallize what are the constraints of your domain.
 ---
 
 A few days ago, a colleague demonstrated an impressive pattern. He (again) was able to have an interesting observation when root-causing an issue. Seeing this more than once let me to ask him about it. I wanted to learn how he approaches a problem. 

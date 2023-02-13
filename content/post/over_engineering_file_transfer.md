@@ -6,6 +6,7 @@ tags:
 - usb
 - ftp
 - smb
+summary: When you can't use your mass storage device as is, you can over-engineer the network to transfer files.
 ---
 
 ## Context
