@@ -17,7 +17,7 @@ I have a B.Sc. in Mathematics and Computer Science and a M.Sc. in Computer Scien
 
 **Personal**:
 
-- I'm married with two kids, and live in suburb of Tel Aviv, Israel.
+- I'm married with three kids, and live in suburb of Tel Aviv, Israel.
 - In the past I learnt photography for two years at [Gavra Studio](https://studiogavra.co.il/). I still enjoy picking up a good camera and taking photos. 
 - I used to play table tennis, but now I mostly play [Eleven Table Tennis](https://www.youtube.com/c/ElevenTableTennis).
 - I train with [freeletics](https://www.freeletics.com/). I'm not very good at it, but I enjoy it very much.
