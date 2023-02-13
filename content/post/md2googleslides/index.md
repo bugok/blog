@@ -42,7 +42,7 @@ Opening your presentation (https://docs.google.com/presentation/d/SOME_ID)
 
 Gets this:
 
-![](/title_slide.png)
+![](title_slide.png)
 
 This command creates a new presentation for every invocation. The documentation helps with this: 
 
