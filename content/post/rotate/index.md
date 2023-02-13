@@ -11,7 +11,7 @@ A few days ago, when my wife and I were attending to our three kids, I suddenly 
 
 For example:
 
-![](/wheel.png)
+![](wheel.png)
 
 (Image taken from [How to redistribute worn inline skate wheels](https://www.ifixit.com/Guide/How+to+redistribute+worn+inline+skate+wheels/50507) by Chris Young)
 
