@@ -5,6 +5,7 @@ tags:
 - culture
 - pandemic
 summary: How can teams prepare for the 'bus factor' during the pandemic.
+description: How can teams prepare for the 'bus factor' during the pandemic.
 ---
 
 The definition of the [bus factor](https://en.wikipedia.org/wiki/Bus_factor) from wikipedia says: 

@@ -4,6 +4,7 @@ date: 2022-04-12T22:03:34+03:00
 tags: 
 - culture
 summary: When you really to blow up at someone, this is the exact moment where you should be really nice to them.
+description: When you really to blow up at someone, this is the exact moment where you should be really nice to them.
 ---
 
 This statement was given in a 'conflict resolution' class I took a few months ago. I don't remember much about that class, but this statement stuck. Mostly, I think, is because I sometimes don't do it - but when I do - I feel really good about myself. 

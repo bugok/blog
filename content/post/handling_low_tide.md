@@ -5,6 +5,7 @@ tags:
 - culture
 - burnout
 summary: How to make the best of times where there are no burning issues, no urgent tasks.
+description: How to make the best of times where there are no burning issues, no urgent tasks.
 
 ---
 

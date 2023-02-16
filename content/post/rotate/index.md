@@ -5,6 +5,7 @@ tags:
 - parenting
 - burnout
 summary: When performing the same task for a long period of time, it helps to switch things up. Both in parenting as well as at work.
+description: When performing the same task for a long period of time, it helps to switch things up. Both in parenting as well as at work.
 ---
 
 A few days ago, when my wife and I were attending to our three kids, I suddenly remembered a movie I saw about an [inline speed skating](https://en.wikipedia.org/wiki/Inline_speed_skating) competition. In that sport (which I don't practice myself), the athletes use their rollerblades to skate in a skating rink multiple times. Again, again and then again. When doing so, they wear out their wheels in an asymmetric manner. 

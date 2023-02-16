@@ -8,6 +8,7 @@ tags:
 - dns
 - cloudflare
 summary: A step-by-step tutorial for setting up a custom domain for a github pages site.
+description: A step-by-step tutorial for setting up a custom domain for a github pages site.
 
 ---
 
