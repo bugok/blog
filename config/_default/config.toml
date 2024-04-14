@@ -1,0 +1,19 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://jpanther.github.io/congo/docs/getting-started/
+
+# baseURL = "https://your_domain.com/"
+baseUrl = "https://www.noamlerner.com/"
+defaultContentLanguage = "en"
+paginate = 10
+theme = 'congo'
+enableRobotsTXT = true
+summaryLength = 0
+googleAnalytics =  'G-4VW03XLR18'
+
+# This helps Google Search console to index the sitemap.xml properly
+# (hrefs are showing up with the baseURL)
+canonifyURLs = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

@@ -1,0 +1,26 @@
+languageCode = "en"
+languageName = "English"
+languageDirection = "ltr"
+weight = 1
+
+title = "Noam Lerner's Blog"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+[params]
+  dateFormat = "2 January 2006"
+
+  mainSections = ["posts"]
+  description = "A bunch of Noam Lerner's ramblings"
+
+[params.author]
+  name = "Noam Lerner"
+  image = "img/avatar.png"
+  headline = "Partner, father of three, engineer"
+  # bio = "A little bit about you"
+  links = [
+    { link = "https://www.noamlerner.com" },
+    { facebook = "https://www.facebook.com/BugoK" },
+    { x-twitter = "https://twitter.com/BugoK1" },
+    { linkedin = "https://www.linkedin.com/in/noamler/" },
+    { github = "https://github.com/bugok" },
+  ]
