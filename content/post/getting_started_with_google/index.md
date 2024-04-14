@@ -22,8 +22,8 @@ Turns out that there are multiple types of Google Analytics properties. I've fou
 
 At some point, with this blog, I got a warning prompt to move from the universal version to the 4 version. I just wanted the warning to go away so I moved to the 4. With my wife's website, I used the Google Analytics 4 right off the bat. Creating it was a bit cumbersome, but after a few clicks I had a property I could use: 
 
-![](/google_analytics_1.png)
-![](/google_analytics_2.png)
+![](google_analytics_1.png)
+![](google_analytics_2.png)
 
 ## Getting the website to show up in Google Search
 
@@ -37,7 +37,7 @@ To do that, I remembered a post somewhere which talked about [Google Search Cons
 
 When using Google Search console for your website, you first need to prove that you own the website. This is done by adding a TXT DNS record with a generated value to the root domain. In my case, since I'm using cloudflare for the domain, it was simple: 
 
-![](/cloudflare_dns_txt.png)
+![](cloudflare_dns_txt.png)
 
 A few moments later, I was able to get started with Google Search Console
 
@@ -74,11 +74,11 @@ I believe I loaded and reloaded the website tens or hundreds of times. But, I wa
 
 The mobile site is OK: 
 
-![](/pagespeed_mobile.png)
+![](pagespeed_mobile.png)
 
 The desktop site is really good: 
 
-![](/pagespeed_desktop.png)
+![](pagespeed_desktop.png)
 
 ## What's next? 
 
