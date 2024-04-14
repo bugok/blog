@@ -88,7 +88,7 @@ However, this isn't good enough, as this isn't the format that github pages is e
 
 As mentioned in the link, I had to change the source branch to `gh-pages`. See here: 
 
-![Github Branch](/github_branch.png)
+![Github Branch](github_branch.png)
 
 Also, I needed to change the default branch to `main` instead of `master`.
 
@@ -96,13 +96,13 @@ Also, I needed to change the default branch to `main` instead of `master`.
 
 When working against a local hugo server I noticed that images weren't showing up properly. For example: 
 
-![Image not showing](/image_not_showing.png)
+![Image not showing](image_not_showing.png)
 
 Googling this, I found many references on how the simplest way to make it work is to save images under the `static` folder of the hugo directory. Upon build, all files under `static` show up at the root of the website. It should have worked, but it didn't. 
 
 Eventually what helped was to open up Chrome Developer Tools and see the following: 
 
-![](/static_path.png)
+![](static_path.png)
 
 Turns out that this didn't work since I'm not using the website's root, but to the `/blog` path. Changing `![About](/about_local.png)` to `![About](/blog/about_local.png)` fixed the issue.
 
