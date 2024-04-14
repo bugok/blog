@@ -20,7 +20,7 @@ This was over-engineering the solution, but I did learn a few things along the w
 
 The direction I wanted to take was to stick the micro SD card into two adapters (`microSD` -> `SD` -> `USB A`), connect that to another device and make that USB device available over the network.
 
-![](/sd_adapters.jpeg)
+![](sd_adapters.jpeg)
 
 ## First, Windows
 
@@ -30,11 +30,11 @@ I have a laptop at home, which runs Windows. My initial thought was to connect t
 
 One of the reasons I gave up on the Windows laptop is because I remembered that the router my laptop is connected to has a USB port. I then thought that I could connect the adapters to the router and somehow get to the content over the network. I have an old [TP Link TL-WDR3600](https://www.tp-link.com/us/home-networking/wifi-router/tl-wdr3600/) which has two USB ports.
 
-![](/tp_link_n600.jpeg)
+![](tp_link_n600.jpeg)
 
 I connected the adapters to the USB port, the LED turned on - but the router didn't recognize it. Obviously, the solution was to turn it on and off. I disconnected and reconnected the adapters, and nothing. Tried the second USB port: LED turned on - but still, nothing showed up in the router: 
 
-![](/tplink_no_usb.png)
+![](tplink_no_usb.png)
 
 Why? Google again, get to [this FAQ](https://www.tp-link.com/us/support/faq/2289/). Turns out that some (old) TP-Link routers support only FAT/FAT32/NTFS file system formats. I had a hunch that it's related, so on the Windows laptop - I checked the microSD filesystem - and there is was: exFAT. 
 
@@ -58,7 +58,7 @@ I plugged in the adapters, and I was able to see that it was recognized in the w
 
 From the TP-Link web UI:
 
-![](/tp_link_ftp_samba.png)
+![](tp_link_ftp_samba.png)
 
 > Samba for Windows
 
