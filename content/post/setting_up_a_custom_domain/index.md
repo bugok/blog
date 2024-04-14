@@ -29,10 +29,10 @@ I signed up for the free plan, bought the noamlerner.com domain, and started to 
 When thinking about where I want to blog to be, I had `blog.noamlerner.com` in mind. Also, when configuring the blog for `github.io`, I used the `/blog` path, in case I'd like to deploy multiple sites to the same `bugok.github.io` subdomain. The latter made things a bit harder to configure. 
 
 Started off with setting a `CNAME` entry for `blog.noamlerner.com` in cloudflare: 
-![](/cloudflare_blog_subdomain.png). 
+![](cloudflare_blog_subdomain.png). 
 
 Then, I configured the custom domain in the github pages settings to be `blog.noamlerner.com`. Eventually, I got this: 
-![](/no_static_content.png)
+![](no_static_content.png)
 
 Obviously, something is working, but some things aren't. The static content isn't available. As a friend recommended, I launched Chrome's developer tools and started poking around. I found that images weren't rendering properly, because they weren't in the right place (I manually changed the the paths to make sure).
 
@@ -54,7 +54,7 @@ Next, I removed the cloudflare proxy. As you can see in the previous screenshot 
 
 Of course, we all want optimizations, cache and protection for our website - but only if they are working. Therefore, I've removed the proxying: 
 
-![](/no_cloudflare_proxy.png)
+![](no_cloudflare_proxy.png)
 
 Looking at the output of dig, I saw what I was expecting:
 ```
@@ -73,24 +73,24 @@ bugok.github.io.	3093	IN	A	185.199.110.153
 Before disabling the proxy, `www.noamlerner.com` was pointing to a cloudflare server.
 
 Lastly, I went back to the github pages settings page, and saw this: 
-![](/github_cert_provisioning.png).
+![](github_cert_provisioning.png).
 
 And a little while after - I got this nice clean lock in Chrome: 
 
-![](/noamlerner_chrome_lock.png)
+![](noamlerner_chrome_lock.png)
 
 
 ### DNS - setting an entry for the root domain
 
 Getting SSL to work required some DNS and at this point, everything seemed to be working for the blog. However, the github pages settings page had a complaint that the custom domain is improperly configured: 
 
-![](/domain_improperly_configured.png)
+![](domain_improperly_configured.png)
 
 Again, Googling a bit, I couldn't find something which adds up. When following the [github subdomain guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain), I did everything it says I should do.
 
 Eventually, it clicked. The warning isn't for `www.noamlerner.com`, but for `noamlerner.com`. This corresponded with Cloudflare having a warning at the top of their console about me not having a DNS entry for the root domain. I've added another CNAME for `noamlerner.com` to resolve to `bugok.github.io`, and a few seconds later - github was happy: 
 
-![](/github_custom_domain_working.png)
+![](github_custom_domain_working.png)
 
 
 ### DNS - CNAME with github actions
@@ -108,11 +108,11 @@ What did work, is to read the manual, and see that the action I used to publish 
 But what happens if the millions of people who have the `bugok.github.io/blog` already bookmarked? How do I prevent them from getting errors and allowing them access to my new domain? Turns out, that going to `bugok.github.io/blog` resolves to `www.noamlerner.com`. But how?
 
 Opening up the network tab in chrome developer tools, I saw this:
-![](/blog_network_requests.png)
+![](blog_network_requests.png)
 
 Then, looking at the first response headers: 
 
-![](/github_response_headers.png)
+![](github_response_headers.png)
 
 ### Finally
 
