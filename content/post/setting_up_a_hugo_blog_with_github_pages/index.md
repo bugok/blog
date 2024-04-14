@@ -70,7 +70,7 @@ The `-D` part is to track draft content (this is the default when new content is
 
 And there is was: 
 
-![About](/about_local.png)
+![About](about_local.png)
 
 The first dummy post was successfully loaded!
 
