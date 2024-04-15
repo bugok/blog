@@ -11,28 +11,27 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Blog"
+  name = "בלוג"
   pageRef = "posts"
   weight = 10
 
 [[main]]
-  name = "Tags"
+  name = "תגיות"
   pageRef = "tags"
   weight = 20
 
 [[main]]
-  name = "whoami"
+  name = "מי אני"
   pageRef = "whoami"
   weight = 30
 
 [[main]]
-  name = "About"
+  name = "אודות"
   pageRef = "about"
   weight = 40
 
-
 [[main]]
-  identifier = "search"
+  identifier = "חיפוש"
   weight = 99
   [main.params]
     action = "search"

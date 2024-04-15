@@ -15,5 +15,7 @@ googleAnalytics =  'G-4VW03XLR18'
 # (hrefs are showing up with the baseURL)
 canonifyURLs = true
 
+relativeURLs = true
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]

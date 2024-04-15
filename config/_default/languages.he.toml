@@ -1,0 +1,26 @@
+languageCode = "he"
+languageName = "עברית"
+languageDirection = "rtl"
+weight = 1
+
+title = "הבלוג של נועם לרנר"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+[params]
+  dateFormat = "2 January 2006"
+
+  mainSections = ["posts"]
+  description = "דברים שיש לי לכתוב"
+
+[params.author]
+  name = "נועם לרנר"
+  image = "img/avatar.png"
+  headline = "בן זוג, אב לשלושה, מהנדס"
+  # bio = "A little bit about you"
+  links = [
+    { link = "https://www.noamlerner.com" },
+    { facebook = "https://www.facebook.com/BugoK" },
+    { x-twitter = "https://twitter.com/BugoK1" },
+    { linkedin = "https://www.linkedin.com/in/noamler/" },
+    { github = "https://github.com/bugok" },
+  ]

@@ -1,7 +1,6 @@
 ---
 title: "Whoami"
 date: 2022-03-19T17:54:04+02:00
-menu: main
 ---
 
 Hello! 👋
