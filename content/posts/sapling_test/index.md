@@ -9,7 +9,7 @@ tags:
 - github
 ---
 
-[Saping](https://sapling-scm.com/) is a:
+[Sapling](https://sapling-scm.com/) is a:
 
 > A Scalable, User-Friendly Source Control System
 
