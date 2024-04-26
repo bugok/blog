@@ -1,8 +1,8 @@
 ---
-title: "Testing stacked commits in GitHub with Sapling"
+title: "Working with stacked commits in GitHub with Sapling"
 date: 2024-04-26T14:14:40+03:00
-summary: Trying to work with GitHub and stacked commits. 
-description:  Trying to work with GitHub and stacked commits.  
+summary: Trying to work with GitHub and stacked commits with Sapling.
+description:  Trying to work with GitHub and stacked commits with Sapling.
 tags:
 - sapling
 - source control
