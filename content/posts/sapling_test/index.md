@@ -6,6 +6,7 @@ description:  Trying to work with GitHub and stacked commits.
 tags:
 - sapling
 - source control
+- github
 ---
 
 [Saping](https://sapling-scm.com/) is a:
