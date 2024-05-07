@@ -99,4 +99,7 @@ After enabling the rule, I get a 302:
 ```
 
 And there. Now the search results from Google which point to the old URLs won't
-lead to a 404. 
+lead to a 404.
+
+After making sure that this works with a temporary redirect, I changed the HTTP
+response to be a permanent redirect.
