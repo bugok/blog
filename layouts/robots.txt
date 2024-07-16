@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /*.xml$
-
-Sitemap: {{ "sitemap.xml" | absURL }}
