@@ -7,6 +7,8 @@ tags:
 - culture
 - failure
 - motivation
+images:
+- rising_300x300.png
 
 ---
 
