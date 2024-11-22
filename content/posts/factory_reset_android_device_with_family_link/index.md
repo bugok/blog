@@ -22,13 +22,13 @@ One of the ways to do this is to stop the supervision on the child's Google acco
 
 When logged in to your child's account in a browser, go to [https://myaccount.google.com/](https://myaccount.google.com/). Security -> your devices -> pick the required device -> click on 'sign out'.
 
-### Remove the 'Family Link parental controls' app
-
-Now that the device isn't managed by Family Link, you can remove [this app](https://play.google.com/store/apps/details?id=com.google.android.apps.kids.familylinkhelper&hl=en).
-
 ### Remove the child's account from the device
 
 On the device, remove your child's account from the device. See instructions [here](https://support.google.com/android/answer/7664951).
+
+### Remove the 'Family Link parental controls' app
+
+Now that the device isn't managed by Family Link, you can remove [this app](https://play.google.com/store/apps/details?id=com.google.android.apps.kids.familylinkhelper&hl=en).
 
 ### Factory-reset
 
