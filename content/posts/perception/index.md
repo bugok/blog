@@ -1,7 +1,6 @@
 ---
 title: Change how you're being perceived
 date: 2025-03-29T20:18:39+03:00
-draft: true
 summary: How your perception may differ from reality, and what can be done about it
 description: How your perception may differ from reality, and what can be done about it
 ---
