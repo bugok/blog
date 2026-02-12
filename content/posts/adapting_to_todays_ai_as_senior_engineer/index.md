@@ -8,6 +8,8 @@ tags:
 - Claude Code
 - Culture
 - Senior engineer
+images: 
+- senior_engineer_ai.png
 ---
 
 
@@ -63,4 +65,4 @@ You can think about this as: at the beginning, make sure everyone understands wh
 
 And now - look: an AI generated image of a senior engineer working with multiple AI agents:
 
-![](senior_engineer_ai.png)
+![AI generated image of an engineer working with AI agents](senior_engineer_ai.png)
