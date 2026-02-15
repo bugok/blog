@@ -12,10 +12,6 @@ images:
 - senior_engineer_ai.png
 ---
 
-
-# Adapting to today's AI era as a senior engineer
-
-
 ## Setting up guardrails
 
 Similar to the world before AI - if you wanted to keep some behavior in check - you should make sure that behavior is kept using tests which run in CI or as part of the push process. This is still true, and maybe even more so, when more code is flowing from the hands of engineers to the source control repositories.
