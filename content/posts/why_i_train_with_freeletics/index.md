@@ -7,6 +7,8 @@ tags:
 - freeletics
 - training
 - motivation
+images:
+- freeletics_logo_300x300.png
 ---
 
 During the Covid-19 lockdowns, I wanted to find a way I could perform physical activity at home. At the time, I imagine that [Freeletics](https://www.freeletics.com/) boosted their online advertising - and I was hit with one of their ads. Since then, I'm still training with this app.
