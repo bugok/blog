@@ -32,4 +32,9 @@ to include the Google spf address.
 Then - I was able to use my custom email address from the gmail app / website
 seamlessly.
 
+The end result is something like this:
 
+![](custom_email.png)
+
+Gmail allows to pick from which email address to send the emails from.
+Similarly, emails received to that configured address will show up in the inbox. 
