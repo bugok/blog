@@ -1,6 +1,6 @@
-languageCode = "he"
-languageName = "עברית"
-languageDirection = "rtl"
+locale = "he"
+label = "עברית"
+direction = "rtl"
 weight = 1
 
 title = "הבלוג של נועם לרנר"
